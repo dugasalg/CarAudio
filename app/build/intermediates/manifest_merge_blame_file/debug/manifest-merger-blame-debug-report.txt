@@ -1,0 +1,258 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.caraudio"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.caraudio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.caraudio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:26:22-94
+16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+17-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+18-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+19
+20    <application
+20-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:5:5-25:19
+21        android:allowBackup="true"
+21-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:6:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.0-alpha01] /Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:7:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:8:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:9:9-43
+28        android:label="@string/app_name"
+28-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:10:9-41
+29        android:supportsRtl="true"
+29-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:11:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.CarAudio" >
+31-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:12:9-46
+32        <activity
+32-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:14:9-24:20
+33            android:name="com.example.caraudio.MainActivity"
+33-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:15:13-41
+34            android:exported="true"
+34-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:16:13-36
+35            android:label="@string/app_name"
+35-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:17:13-45
+36            android:theme="@style/Theme.CarAudio" >
+36-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:18:13-50
+37            <intent-filter>
+37-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:19:13-23:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:20:17-69
+38-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:20:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:22:17-77
+40-->/Users/diegosalgado/AndroidStudioProjects/CarAudio2/app/src/main/AndroidManifest.xml:22:27-74
+41            </intent-filter>
+42        </activity>
+43        <!--
+44        Service for holding metadata. Cannot be instantiated.
+45        Metadata will be merged from other manifests.
+46        -->
+47        <service
+47-->[androidx.camera:camera-core:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/b753633984b39382bf1a0fcd4e53ec9f/transformed/camera-core-1.3.0-alpha04/AndroidManifest.xml:29:9-33:78
+48            android:name="androidx.camera.core.impl.MetadataHolderService"
+48-->[androidx.camera:camera-core:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/b753633984b39382bf1a0fcd4e53ec9f/transformed/camera-core-1.3.0-alpha04/AndroidManifest.xml:30:13-75
+49            android:enabled="false"
+49-->[androidx.camera:camera-core:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/b753633984b39382bf1a0fcd4e53ec9f/transformed/camera-core-1.3.0-alpha04/AndroidManifest.xml:31:13-36
+50            android:exported="false" >
+50-->[androidx.camera:camera-core:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/b753633984b39382bf1a0fcd4e53ec9f/transformed/camera-core-1.3.0-alpha04/AndroidManifest.xml:32:13-37
+51            <meta-data
+51-->[androidx.camera:camera-camera2:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/d5f90ff38c91eeeb3a4f977b81409f45/transformed/camera-camera2-1.3.0-alpha04/AndroidManifest.xml:30:13-32:89
+52                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+52-->[androidx.camera:camera-camera2:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/d5f90ff38c91eeeb3a4f977b81409f45/transformed/camera-camera2-1.3.0-alpha04/AndroidManifest.xml:31:17-103
+53                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+53-->[androidx.camera:camera-camera2:1.3.0-alpha04] /Users/diegosalgado/.gradle/caches/transforms-3/d5f90ff38c91eeeb3a4f977b81409f45/transformed/camera-camera2-1.3.0-alpha04/AndroidManifest.xml:32:17-86
+54        </service>
+55        <service
+55-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:9:9-15:19
+56            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+56-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:10:13-91
+57            android:directBootAware="true"
+57-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:17:13-43
+58            android:exported="false" >
+58-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:11:13-37
+59            <meta-data
+59-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:12:13-14:85
+60                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+60-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:13:17-120
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/f9c910f520ae8051894e6f75882e387c/transformed/play-services-mlkit-barcode-scanning-18.1.0/AndroidManifest.xml:14:17-82
+62            <meta-data
+62-->[com.google.mlkit:vision-common:17.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/71063acfa4a99bd50a034d73f412e131/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+63                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+63-->[com.google.mlkit:vision-common:17.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/71063acfa4a99bd50a034d73f412e131/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.mlkit:vision-common:17.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/71063acfa4a99bd50a034d73f412e131/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+65            <meta-data
+65-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:20:13-22:85
+66                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+66-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:21:17-120
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:22:17-82
+68        </service>
+69
+70        <provider
+70-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:9:9-13:38
+71            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+71-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:10:13-78
+72            android:authorities="com.example.caraudio.mlkitinitprovider"
+72-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:11:13-69
+73            android:exported="false"
+73-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:12:13-37
+74            android:initOrder="99" />
+74-->[com.google.mlkit:common:18.6.0] /Users/diegosalgado/.gradle/caches/transforms-3/42508893a4a857a532183c06b66ad8ab/transformed/common-18.6.0/AndroidManifest.xml:13:13-35
+75
+76        <activity
+76-->[com.google.android.gms:play-services-base:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/15ea7f1d5843f2aa851ebbf92a805572/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/15ea7f1d5843f2aa851ebbf92a805572/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:18.1.0] /Users/diegosalgado/.gradle/caches/transforms-3/15ea7f1d5843f2aa851ebbf92a805572/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+84
+85        <activity
+85-->[androidx.compose.ui:ui-test-manifest:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/09c4591b0fecf8b7b870d38b4e00c5e4/transformed/ui-test-manifest-1.5.2/AndroidManifest.xml:23:9-25:39
+86            android:name="androidx.activity.ComponentActivity"
+86-->[androidx.compose.ui:ui-test-manifest:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/09c4591b0fecf8b7b870d38b4e00c5e4/transformed/ui-test-manifest-1.5.2/AndroidManifest.xml:24:13-63
+87            android:exported="true" />
+87-->[androidx.compose.ui:ui-test-manifest:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/09c4591b0fecf8b7b870d38b4e00c5e4/transformed/ui-test-manifest-1.5.2/AndroidManifest.xml:25:13-36
+88
+89        <provider
+89-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+90            android:name="androidx.startup.InitializationProvider"
+90-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+91            android:authorities="com.example.caraudio.androidx-startup"
+91-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+92            android:exported="false" >
+92-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+93            <meta-data
+93-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+94                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+94-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+95                android:value="androidx.startup" />
+95-->[androidx.emoji2:emoji2:1.4.0] /Users/diegosalgado/.gradle/caches/transforms-3/3f4bc903509976767b8642fe0a6b0d4b/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+96            <meta-data
+96-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/diegosalgado/.gradle/caches/transforms-3/a2084a139b62956742a609469e4e03b4/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+97                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+97-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/diegosalgado/.gradle/caches/transforms-3/a2084a139b62956742a609469e4e03b4/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+98                android:value="androidx.startup" />
+98-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/diegosalgado/.gradle/caches/transforms-3/a2084a139b62956742a609469e4e03b4/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+99            <meta-data
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+101                android:value="androidx.startup" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+102        </provider>
+103
+104        <activity
+104-->[androidx.compose.ui:ui-tooling-android:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/03a6760d461d0254973b798939cbd8f3/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+105            android:name="androidx.compose.ui.tooling.PreviewActivity"
+105-->[androidx.compose.ui:ui-tooling-android:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/03a6760d461d0254973b798939cbd8f3/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+106            android:exported="true" />
+106-->[androidx.compose.ui:ui-tooling-android:1.5.2] /Users/diegosalgado/.gradle/caches/transforms-3/03a6760d461d0254973b798939cbd8f3/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+107
+108        <receiver
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+109            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+110            android:directBootAware="false"
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+111            android:enabled="true"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+112            android:exported="true"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+113            android:permission="android.permission.DUMP" >
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+115                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+118                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+121                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+124                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/diegosalgado/.gradle/caches/transforms-3/5c920ebb4280b76fe2dbcfd8c33163e5/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+125            </intent-filter>
+126        </receiver>
+127
+128        <service
+128-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+129            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+129-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+130            android:exported="false" >
+130-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+131            <meta-data
+131-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+132                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+132-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+133                android:value="cct" />
+133-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/diegosalgado/.gradle/caches/transforms-3/974de84aef13637e751256adf92d10a4/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+134        </service>
+135        <service
+135-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+136            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+136-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+137            android:exported="false"
+137-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+138            android:permission="android.permission.BIND_JOB_SERVICE" >
+138-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+139        </service>
+140
+141        <receiver
+141-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+142            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+142-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+143            android:exported="false" />
+143-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/diegosalgado/.gradle/caches/transforms-3/a89d0a57977a8e00d1aca972d3c00ac9/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+144    </application>
+145
+146</manifest>

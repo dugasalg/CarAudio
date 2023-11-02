@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/xml_backup_rules.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_hifonicsamp.png.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/hifonicsamp.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_wpp2.png.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/wpp2.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_jlsub.jpeg.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/jlsub.jpeg"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_onboardscreen.png.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/onboardscreen.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_jlspeak.jpeg.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/jlspeak.jpeg"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_jlamp.png.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/jlamp.png"
+    },
+    {
+        "merged": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-merged_res-67:/drawable_appwallpp.png.flat",
+        "source": "/Users/diegosalgado/.gradle/daemon/7.5/com.example.caraudio.app-main-69:/drawable/appwallpp.png"
+    },
+    {
+        "merged": "com.example.caraudio.app-merged_res-67:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.caraudio.app-main-69:/mipmap-hdpi/ic_launcher_foreground.png"
+    }
+]
