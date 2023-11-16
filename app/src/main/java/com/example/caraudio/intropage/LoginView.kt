@@ -22,7 +22,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.caraudio.R
 @Composable
-fun LoginScreen(NavController: NavController) {
+fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -106,7 +106,14 @@ fun LoginScreen(NavController: NavController) {
             // Login button
             // Inside the LoginScreen composable
             Button(
-                onClick = { NavController.navigate(route = "home") },
+                //onClick = { NavController.navigate(route = "home") },
+                onClick = {
+                    viewModel.doLogin(
+                        LoginDataBody(
+                            usrn = "diego1", password = "diego"
+                        )
+                    )
+                },
                 modifier = Modifier
                     .fillMaxWidth()  // Apply fillMaxWidth() directly here
                     .height(56.dp),
@@ -136,7 +143,7 @@ fun LoginScreen(NavController: NavController) {
 fun LoginScreenPreview() {
     // Dummy NavController for preview
     val navController = rememberNavController()
-    LoginScreen(NavController = navController)
+    LoginScreen(NavController = navController, viewModel = LoginViewModel())
 }
 
 

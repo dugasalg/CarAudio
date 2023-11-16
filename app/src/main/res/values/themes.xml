@@ -2,6 +2,6 @@
 <resources>
 
     <style name="Theme.CarAudio" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">@color/black</item>
     </style>
-
 </resources>
