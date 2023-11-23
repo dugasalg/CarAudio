@@ -2,7 +2,8 @@ package com.example.caraudio.intropage
 
 //Respuesta de nuestro servivio
 data class LoginModel(
-    val message: String
+    val message: String,
+    val jwt: String
 )
 
 //Se envia en el body de la peticion

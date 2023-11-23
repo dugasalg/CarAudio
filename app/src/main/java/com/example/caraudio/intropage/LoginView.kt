@@ -23,6 +23,10 @@ import androidx.navigation.compose.rememberNavController
 import com.example.caraudio.R
 @Composable
 fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
+
+    var password by remember { mutableStateOf("") }
+    var userName by remember { mutableStateOf("") }
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -54,9 +58,10 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
             Spacer(modifier = Modifier.height(32.dp))
 
             // Email text field with email keyboard
+
             OutlinedTextField(
-                value = "",
-                onValueChange = { /* Handle email change */ },
+                value = userName,
+                onValueChange = {userName = it },
                 label = { Text(text = stringResource(id = R.string.Enter_your_email)) },
                 keyboardOptions = KeyboardOptions.Default.copy(
                     keyboardType = androidx.compose.ui.text.input.KeyboardType.Email
@@ -68,7 +73,6 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
 
             // Password text field with eye icon
             var isPasswordVisible by remember { mutableStateOf(false) }
-            var password by remember { mutableStateOf("") }
             OutlinedTextField(
                 value = password,
                 onValueChange = { password = it },
@@ -110,7 +114,7 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
                 onClick = {
                     viewModel.doLogin(
                         LoginDataBody(
-                            usrn = "diego1", password = "diego"
+                            usrn = userName, password = password
                         )
                     )
                 },
