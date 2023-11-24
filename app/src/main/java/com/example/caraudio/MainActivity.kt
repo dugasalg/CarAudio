@@ -17,15 +17,16 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.caraudio.intropage.Views.IntroScreen
 import com.example.caraudio.intropage.Views.LoginScreen
-import com.example.caraudio.intropage.Views.RegisterScreen
+import com.example.caraudio.register.view.RegisterScreen
 
 import com.example.caraudio.navigation.NavRoutes
 import com.example.caraudio.onboarding.OnboardingView
 import com.example.caraudio.ui.theme.CarAudioTheme
-import com.example.caraudio.views.ProductCardPreview
+import com.example.caraudio.home.view.ProductCardPreview
 import com.google.accompanist.pager.ExperimentalPagerApi
 import androidx.core.content.ContextCompat
-import com.example.caraudio.intropage.ViewModel.LoginViewModel
+import com.example.caraudio.login.viewModel.LoginViewModel
+import com.example.caraudio.register.viewModel.RegisterViewModel
 
 class MainActivity : AppCompatActivity() {
     @OptIn(ExperimentalPagerApi::class)
@@ -141,7 +142,7 @@ fun NavigationHost(navController: NavHostController) {
             LoginScreen(NavController = navController, viewModel = LoginViewModel())
         }
         composable(NavRoutes.Register.route) {
-            RegisterScreen(NavController = navController)
+            RegisterScreen(NavController = navController, viewModel = RegisterViewModel())
         }
         composable(NavRoutes.Home.route) {
             ProductCardPreview(NavController = navController)

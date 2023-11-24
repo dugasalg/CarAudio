@@ -1,6 +1,7 @@
 package com.example.caraudio
 
 import com.example.caraudio.intropage.network.LoginService
+import com.example.caraudio.register.network.RegisterService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -27,5 +28,10 @@ object RetrofitInstance {
 
     val loginService: LoginService by lazy {
         retrofit.create(LoginService::class.java)
+
+    }
+    val registerService: RegisterService by lazy {
+        retrofit.create(RegisterService::class.java)
+
     }
 }

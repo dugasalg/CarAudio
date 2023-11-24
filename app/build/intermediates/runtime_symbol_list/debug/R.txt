@@ -1471,8 +1471,10 @@ int string abc_searchview_description_voice 0x7f0e002d
 int string abc_shareactionprovider_share_with 0x7f0e002e
 int string abc_shareactionprovider_share_with_application 0x7f0e002f
 int string abc_toolbar_collapse_description 0x7f0e0030
+int string address 0x7f0e00a9
 int string androidx_startup 0x7f0e0031
 int string app_name 0x7f0e0032
+int string birthDate 0x7f0e00aa
 int string bottom_sheet_collapse_description 0x7f0e0033
 int string bottom_sheet_dismiss_description 0x7f0e0034
 int string bottom_sheet_drag_handle_description 0x7f0e0035

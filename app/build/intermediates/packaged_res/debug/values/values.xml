@@ -30,7 +30,9 @@
     <string name="Welcome_back">Welcome back!</string>
     <string name="With_us_you_can_buy_whatever_Car_Audio_component_or_accesory_you_need">With us you can buy whatever Car Audio component or accessory you need</string>
     <string name="Your_CarAudio_Store">Your CarAudio Store</string>
+    <string name="address">address</string>
     <string name="app_name">CarAudio</string>
+    <string name="birthDate">Birth Date</string>
     <string name="cart">cart</string>
     <string name="home">home</string>
     <string name="menu">menu</string>

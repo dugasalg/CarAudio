@@ -42,7 +42,9 @@ string Username
 string Welcome_back
 string With_us_you_can_buy_whatever_Car_Audio_component_or_accesory_you_need
 string Your_CarAudio_Store
+string address
 string app_name
+string birthDate
 string cart
 string home
 string menu

@@ -22,7 +22,9 @@
     <string name="Welcome_back">Bienvenido de nuevo</string>
     <string name="With_us_you_can_buy_whatever_Car_Audio_component_or_accesory_you_need">Con nosotros podras comprar cualquier componente o accesorio de CarAudio</string>
     <string name="Your_CarAudio_Store">Tu tienda de CarAudio</string>
+    <string name="address">Direccion</string>
     <string name="app_name">CarAudio</string>
+    <string name="birthDate">Fecha de Nacimiento</string>
     <string name="cart">Carrito</string>
     <string name="home">Inicio</string>
     <string name="menu">Menu</string>

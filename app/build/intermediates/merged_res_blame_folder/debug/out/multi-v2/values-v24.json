@@ -4,7 +4,7 @@
             "outputFile": "com.example.caraudio.app-mergeDebugResources-66:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\santi\\.gradle\\caches\\transforms-3\\e05b1ce225b2f306a2f1bcaa6cc4bb82\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/e05b1ce225b2f306a2f1bcaa6cc4bb82/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

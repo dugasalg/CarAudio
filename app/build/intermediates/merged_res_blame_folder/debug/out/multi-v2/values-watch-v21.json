@@ -4,7 +4,7 @@
             "outputFile": "com.example.caraudio.app-mergeDebugResources-66:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\santi\\.gradle\\caches\\transforms-3\\e05b1ce225b2f306a2f1bcaa6cc4bb82\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/e05b1ce225b2f306a2f1bcaa6cc4bb82/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
