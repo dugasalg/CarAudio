@@ -1,11 +1,8 @@
 package com.example.caraudio
 
 import android.annotation.SuppressLint
-import android.hardware.biometrics.BiometricManager
-import android.hardware.biometrics.BiometricPrompt
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,16 +10,14 @@ import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.BlendMode.Companion.Screen
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.caraudio.intropage.IntroScreen
-import com.example.caraudio.intropage.LoginScreen
-import com.example.caraudio.intropage.RegisterScreen
+import com.example.caraudio.intropage.Views.IntroScreen
+import com.example.caraudio.intropage.Views.LoginScreen
+import com.example.caraudio.intropage.Views.RegisterScreen
 
 import com.example.caraudio.navigation.NavRoutes
 import com.example.caraudio.onboarding.OnboardingView
@@ -30,8 +25,7 @@ import com.example.caraudio.ui.theme.CarAudioTheme
 import com.example.caraudio.views.ProductCardPreview
 import com.google.accompanist.pager.ExperimentalPagerApi
 import androidx.core.content.ContextCompat
-import com.example.caraudio.biometric.Auth
-import com.example.caraudio.intropage.LoginViewModel
+import com.example.caraudio.intropage.ViewModel.LoginViewModel
 
 class MainActivity : AppCompatActivity() {
     @OptIn(ExperimentalPagerApi::class)

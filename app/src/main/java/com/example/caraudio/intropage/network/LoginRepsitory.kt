@@ -1,8 +1,8 @@
 package com.example.caraudio.intropage.network
 
 import com.example.caraudio.RetrofitInstance
-import com.example.caraudio.intropage.LoginDataBody
-import com.example.caraudio.intropage.LoginModel
+import com.example.caraudio.intropage.Model.LoginDataBody
+import com.example.caraudio.intropage.Model.LoginModel
 
 class LoginRepository {
     private val loginService = RetrofitInstance.loginService
