@@ -1,5 +1,6 @@
 package com.example.caraudio
 
+import MenuView
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
@@ -27,6 +28,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import androidx.core.content.ContextCompat
 import com.example.caraudio.login.viewModel.LoginViewModel
 import com.example.caraudio.register.viewModel.RegisterViewModel
+import com.example.caraudio.splashScreen.SplashView
 
 class MainActivity : AppCompatActivity() {
     @OptIn(ExperimentalPagerApi::class)
@@ -134,7 +136,8 @@ fun MainScreen() {
 @OptIn(ExperimentalPagerApi::class)
 @Composable
 fun NavigationHost(navController: NavHostController) {
-    NavHost(navController, startDestination = NavRoutes.Intro.route) {
+    NavHost(navController, startDestination = "splash") {
+        composable("splash") { SplashView(navController) }
         composable(NavRoutes.Intro.route) {
             IntroScreen(navController = navController)
         }
@@ -150,9 +153,25 @@ fun NavigationHost(navController: NavHostController) {
         composable(NavRoutes.Onboarding.route) {
             OnboardingView(navController = navController)
         }
+        composable(NavRoutes.Menu.route) {
+            MenuView(navController = navController) { menuItem ->
+                when (menuItem) {
+                    "Cierra Sesión" -> {
+                        navController.navigate(route = NavRoutes.Intro.route)
+                    }
+                    else -> {
+                        // Manejar otras opciones del menú si es necesario
+                    }
+                }
+            }
+        }
+    }
+
         // Puedes agregar más composables aquí para otras pantallas
     }
-}
+
+
+
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {

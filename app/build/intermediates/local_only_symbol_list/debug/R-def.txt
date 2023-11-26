@@ -12,10 +12,12 @@ drawable appwallpp
 drawable hifonicsamp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable icon
 drawable jlamp
 drawable jlspeak
 drawable jlsub
 drawable onboardscreen
+drawable vector
 drawable wpp2
 mipmap ic_launcher
 mipmap ic_launcher_foreground

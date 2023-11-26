@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.caraudio.R
 import com.example.caraudio.models.Amps
 import com.example.caraudio.models.Speakers
@@ -39,6 +40,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val navController = rememberNavController()
+
             val amps = listOf(
                 Amps("JL Audio Amplifier", "$9000.00", R.drawable.jlamp),
                 Amps("Hifonics Amplifier", "$8000.00", R.drawable.hifonicsamp)
@@ -56,8 +59,7 @@ class MainActivity : ComponentActivity() {
                 Column {
                     CrazyRoll(products = amps, modifier = Modifier.weight(1f))
                     CrazyRoll(products = speakers, modifier = Modifier.weight(1f))
-                    BottomNavBar()
-
+                    BottomNavBar(navController = navController)
                 }
             }
         }
@@ -67,6 +69,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ProductCardPreview(NavController: NavController) {
+    val navController = rememberNavController()
+
     val amps = listOf(
         Amps("JL Audio Amplifier", "$9000.00", R.drawable.jlamp),
         Amps("Hifonics Amplifier", "$8000.00", R.drawable.hifonicsamp)
@@ -80,7 +84,7 @@ fun ProductCardPreview(NavController: NavController) {
     Column {
         CrazyRoll(products = amps, modifier = Modifier.weight(1f))
         CrazyRoll(products = speakers, modifier = Modifier.weight(1f))
-        BottomNavBar()
+        BottomNavBar(navController = navController)
 
     }
 
@@ -90,7 +94,7 @@ fun ProductCardPreview(NavController: NavController) {
 @Composable
 fun MainActivityPreview() {
     // Dummy NavController for preview
-    val navController = rememberUpdatedState<NavController?>(null).value
+
 
     val amps = listOf(
         Amps("JL Audio Amplifier", "$9000.00", R.drawable.jlamp),
@@ -110,8 +114,9 @@ fun MainActivityPreview() {
         Column {
             CrazyRoll(products = amps, modifier = Modifier.weight(1f))
             CrazyRoll(products = speakers, modifier = Modifier.weight(1f))
-            BottomNavBar()
+            BottomNavBar(navController = rememberNavController())
+            }
         }
     }
-}
+
 

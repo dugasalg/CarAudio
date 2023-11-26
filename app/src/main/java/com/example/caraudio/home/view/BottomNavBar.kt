@@ -10,10 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
 import com.example.caraudio.R
+import com.example.caraudio.navigation.NavRoutes
 
 @Composable
-fun BottomNavBar() {
+fun BottomNavBar(navController: NavController) {
     BottomNavigation(
         modifier = Modifier.fillMaxWidth(),
         backgroundColor = Color.White,
@@ -35,7 +37,10 @@ fun BottomNavBar() {
             icon = { Icon(Icons.Default.Menu, contentDescription = null) },
             label = { androidx.compose.material3.Text(text = stringResource(id = R.string.menu)) },
             selected = false,
-            onClick = {}
+            onClick =
+            {
+                navController.navigate(NavRoutes.Menu.route)
+            }
         )
     }
 }
