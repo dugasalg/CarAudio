@@ -18,33 +18,45 @@ import androidx.navigation.NavController
 import com.example.caraudio.R
 import com.example.caraudio.home.viewModel.ProductsViewModel
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
     viewModel.fetchProducts()
     val products by viewModel.products.observeAsState(emptyList())
-    Column(
-        modifier = Modifier
-            .fillMaxHeight()
-            .padding(16.dp)
-    ) {
-        SearchBar()
-        Spacer(modifier = Modifier.height(16.dp))
-        Text(
-            text = stringResource(id = R.string.Amplifiers),
-            fontSize = 30.sp,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.fillMaxWidth()
-        )
-        Spacer(modifier = Modifier.height(5.dp))
-        LazyRow {
-            items(products) { product ->
-                Spacer(modifier = Modifier.width(8.dp))
-                ProductCard(product.product, product.price, product.image)
+    Scaffold(
+        content = { it
+            Column(
+                modifier = Modifier
+                    .fillMaxHeight()
+                    .padding(16.dp)
+            ) {
+                SearchBar()
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = stringResource(id = R.string.Amplifiers),
+                    fontSize = 30.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.fillMaxWidth()
+                )
+                Spacer(modifier = Modifier.height(5.dp))
+                LazyRow {
+                    items(products) { product ->
+                        Spacer(modifier = Modifier.width(8.dp))
+                        ProductCard(product.product, product.price, product.image)
+                    }
+                }
             }
-        }
-    }
-        BottomNavBar(navController = navController, modifier = Modifier)
+        },
+        bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
+    )
 }
+
+
+
+
+
+
+
 
 @Composable
 fun SearchBar() {

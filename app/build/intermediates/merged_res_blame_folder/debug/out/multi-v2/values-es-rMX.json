@@ -4,7 +4,7 @@
             "outputFile": "com.example.caraudio.app-mergeDebugResources-67:/values-es-rMX/values-es-rMX.xml",
             "map": [
                 {
-                    "source": "/Users/diegosalgado/AndroidStudioProjects/CarAudio3/app/src/main/res/values-es-rMX/strings.xml",
+                    "source": "/Users/jorgeromo/Desktop/CarAudio/app/src/main/res/values-es-rMX/strings.xml",
                     "from": {
                         "startLines": "23,18,6,13,21,16,9,10,11,22,19,8,14,12,4,17,5,24,15,7,20,3,32,2,31,29,28,30,26,27,25",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
