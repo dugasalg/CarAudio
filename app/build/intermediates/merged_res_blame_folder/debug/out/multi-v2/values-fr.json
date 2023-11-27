@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.caraudio.app-mergeDebugResources-66:/values-fr/values-fr.xml",
+            "outputFile": "com.example.caraudio.app-mergeDebugResources-67:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/diegosalgado/.gradle/caches/transforms-3/f9f2f358f01ee1065f25aa57b4087b8e/transformed/biometric-1.1.0/res/values-fr/values-fr.xml",

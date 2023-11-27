@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.caraudio.app-mergeDebugResources-66:/values-da/values-da.xml",
+            "outputFile": "com.example.caraudio.app-mergeDebugResources-67:/values-da/values-da.xml",
             "map": [
                 {
                     "source": "/Users/diegosalgado/.gradle/caches/transforms-3/4ca4d94093595a68b345ce2f5cd1e523/transformed/material3-1.1.2/res/values-da/values-da.xml",

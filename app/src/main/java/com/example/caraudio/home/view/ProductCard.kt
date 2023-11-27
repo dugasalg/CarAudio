@@ -1,4 +1,4 @@
-package com.example.caraudio.views
+package com.example.caraudio.home.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -14,11 +14,11 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import com.example.caraudio.models.Amps
+import coil.compose.rememberImagePainter
 import com.example.caraudio.models.Speakers
 
 @Composable
-fun ProductCard(product: Amps) {
+fun ProductCard(product: String, price: Int, image: String) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(27.dp))
@@ -36,8 +36,9 @@ fun ProductCard(product: Amps) {
             modifier = Modifier
                 .fillMaxWidth()
         ) {
+            val image = rememberImagePainter(image)
             Image(
-                painter = painterResource(id = product.imageResourceId),
+                painter = image,
                 contentDescription = null,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
@@ -49,7 +50,7 @@ fun ProductCard(product: Amps) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = product.name,
+                text = product,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.fillMaxWidth()
@@ -58,7 +59,7 @@ fun ProductCard(product: Amps) {
             Spacer(modifier = Modifier.height(2.dp))
 
             Text(
-                text = product.price,
+                text = "$$price",
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.fillMaxWidth()
             )
@@ -67,7 +68,7 @@ fun ProductCard(product: Amps) {
 }
 
 @Composable
-fun ProductCard2(product: Speakers) {
+fun ProductCard2(product: String, price: Int, image: String) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(27.dp))
@@ -85,8 +86,9 @@ fun ProductCard2(product: Speakers) {
             modifier = Modifier
                 .fillMaxWidth()
         ) {
+            val image = rememberImagePainter(image)
             Image(
-                painter = painterResource(id = product.imageResourceId),
+                painter = image,
                 contentDescription = null,
                 contentScale = ContentScale.Fit,
                 modifier = Modifier
@@ -98,7 +100,7 @@ fun ProductCard2(product: Speakers) {
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = product.name,
+                text = product,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.fillMaxWidth()
@@ -107,7 +109,7 @@ fun ProductCard2(product: Speakers) {
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = product.price,
+                text = "$$price",
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.fillMaxWidth()
             )

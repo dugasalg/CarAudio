@@ -32,7 +32,7 @@ fun CrazyRoll(products: List<Amps>, modifier: Modifier = Modifier) {
         LazyRow {
             items(products) { product ->
                 Spacer(modifier = Modifier.width(8.dp))
-                ProductCard(product)
+                //ProductCard(product)
             }
         }
     }

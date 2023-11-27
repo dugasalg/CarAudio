@@ -1,4 +1,4 @@
-package com.example.caraudio.views
+package com.example.caraudio.home.view
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.*
@@ -15,7 +15,7 @@ import com.example.caraudio.R
 import com.example.caraudio.navigation.NavRoutes
 
 @Composable
-fun BottomNavBar(navController: NavController) {
+fun BottomNavBar(navController: NavController, modifier: Modifier) {
     BottomNavigation(
         modifier = Modifier.fillMaxWidth(),
         backgroundColor = Color.White,

@@ -23,9 +23,12 @@ import com.example.caraudio.register.view.RegisterScreen
 import com.example.caraudio.navigation.NavRoutes
 import com.example.caraudio.onboarding.OnboardingView
 import com.example.caraudio.ui.theme.CarAudioTheme
-import com.example.caraudio.home.view.ProductCardPreview
 import com.google.accompanist.pager.ExperimentalPagerApi
 import androidx.core.content.ContextCompat
+import androidx.navigation.NavController
+import com.example.caraudio.home.view.BottomNavBar
+import com.example.caraudio.home.view.HomePage
+import com.example.caraudio.home.viewModel.ProductsViewModel
 import com.example.caraudio.login.viewModel.LoginViewModel
 import com.example.caraudio.register.viewModel.RegisterViewModel
 import com.example.caraudio.splashScreen.SplashView
@@ -131,7 +134,8 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()
-            NavigationHost(navController = navController) }
+            NavigationHost(navController = navController)
+}
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
@@ -148,7 +152,7 @@ fun NavigationHost(navController: NavHostController) {
             RegisterScreen(NavController = navController, viewModel = RegisterViewModel())
         }
         composable(NavRoutes.Home.route) {
-            ProductCardPreview(NavController = navController)
+            HomePage(navController = navController, ProductsViewModel())
         }
         composable(NavRoutes.Onboarding.route) {
             OnboardingView(navController = navController)
