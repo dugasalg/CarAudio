@@ -16,7 +16,9 @@ drawable icon
 drawable jlamp
 drawable jlspeak
 drawable jlsub
+drawable mas
 drawable onboardscreen
+drawable signomenos
 drawable vector
 drawable wpp2
 mipmap ic_launcher

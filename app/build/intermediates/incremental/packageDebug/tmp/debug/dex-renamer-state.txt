@@ -1,4 +1,4 @@
-#Fri Dec 01 18:33:08 CST 2023
+#Sat Dec 02 00:04:39 CST 2023
 base.0=/Users/diegosalgado/AndroidStudioProjects/CarAudio3/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/diegosalgado/AndroidStudioProjects/CarAudio3/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/diegosalgado/AndroidStudioProjects/CarAudio3/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex

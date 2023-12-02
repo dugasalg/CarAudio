@@ -1002,6 +1002,7 @@ int drawable icon 0x7f080079
 int drawable jlamp 0x7f08007a
 int drawable jlspeak 0x7f08007b
 int drawable jlsub 0x7f08007c
+int drawable mas 0x7f080090
 int drawable notification_action_background 0x7f08007d
 int drawable notification_bg 0x7f08007e
 int drawable notification_bg_low 0x7f08007f
@@ -1016,6 +1017,7 @@ int drawable notification_template_icon_low_bg 0x7f080087
 int drawable notification_tile_bg 0x7f080088
 int drawable notify_panel_notification_icon_bg 0x7f080089
 int drawable onboardscreen 0x7f08008a
+int drawable signomenos 0x7f080091
 int drawable test_level_drawable 0x7f08008b
 int drawable tooltip_frame_dark 0x7f08008c
 int drawable tooltip_frame_light 0x7f08008d
@@ -1432,8 +1434,8 @@ int string Continue_as_a_guest 0x7f0f0002
 int string Dont_have_an_account_Register_now 0x7f0f0003
 int string Dont_hesitate_to_ask_for_help_Our_support_team_is_available_24_7 0x7f0f0004
 int string Email 0x7f0f0005
-int string Enter_your_password 0x7f0f0007
-int string Enter_your_username 0x7f0f00ab
+int string Enter_your_password 0x7f0f0006
+int string Enter_your_username 0x7f0f0007
 int string Forget_your_password 0x7f0f0008
 int string Get_Started 0x7f0f0009
 int string Glad_to_see_you_You_will_discover_new_amazing_Car_Audio_products 0x7f0f000a

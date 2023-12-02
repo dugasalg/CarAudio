@@ -30,6 +30,7 @@ import com.example.caraudio.home.view.BottomNavBar
 import com.example.caraudio.home.view.HomePage
 import com.example.caraudio.home.viewModel.ProductsViewModel
 import com.example.caraudio.login.viewModel.LoginViewModel
+import com.example.caraudio.menu.AboutScreen
 import com.example.caraudio.register.viewModel.RegisterViewModel
 import com.example.caraudio.splashScreen.SplashView
 
@@ -157,18 +158,21 @@ fun NavigationHost(navController: NavHostController) {
         composable(NavRoutes.Onboarding.route) {
             OnboardingView(navController = navController)
         }
+        composable(NavRoutes.About.route) {
+            AboutScreen(navController = navController)
+        }
         composable(NavRoutes.Menu.route) {
-            MenuView(navController = navController, viewModel = LoginViewModel()) { menuItems ->
-                    "Sign out" -> {
+           // MenuView(navController = navController, viewModel = LoginViewModel()) { menuItems ->
+             //       "Sign out" -> {
                         navController.navigate(route = NavRoutes.Intro.route)
                     }
-                    else -> {
+               //     else -> {
                         // Manejar otras opciones del menú si es necesario
                     }
                 }
-            }
-        }
-    }
+            //}
+       // }
+    //}
 
         // Puedes agregar más composables aquí para otras pantallas
 

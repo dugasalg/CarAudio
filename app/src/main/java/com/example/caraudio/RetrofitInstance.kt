@@ -1,5 +1,6 @@
 package com.example.caraudio
 
+import com.example.caraudio.cart.network.QuotationService
 import com.example.caraudio.home.model.Products
 import com.example.caraudio.home.network.ProductService
 import com.example.caraudio.intropage.network.LoginService
@@ -38,5 +39,8 @@ object RetrofitInstance {
     }
     val productsService: ProductService by lazy {
         retrofit.create(ProductService::class.java)
+    }
+    val quotationService: QuotationService by lazy {
+        retrofit.create(QuotationService::class.java)
     }
 }

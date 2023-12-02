@@ -72,6 +72,9 @@ fun MenuView(
                                         popUpTo(NavRoutes.Home.route) { inclusive = true }
                                     }
                                 }
+                                "About app" -> navController.navigate(NavRoutes.About.route)
+
+
                                 else -> {
                                     // Manejar la acción por defecto
                                 }
