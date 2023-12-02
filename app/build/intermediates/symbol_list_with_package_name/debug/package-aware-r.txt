@@ -1426,14 +1426,15 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw soundlottie
 string Amplifiers
 string Confirm_Password
 string Continue_as_a_guest
 string Dont_have_an_account_Register_now
 string Dont_hesitate_to_ask_for_help_Our_support_team_is_available_24_7
 string Email
-string Enter_your_email
 string Enter_your_password
+string Enter_your_username
 string Forget_your_password
 string Get_Started
 string Glad_to_see_you_You_will_discover_new_amazing_Car_Audio_products

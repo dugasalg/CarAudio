@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -19,10 +20,13 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.caraudio.R
 import kotlinx.coroutines.delay
+import com.airbnb.lottie.compose.*
 
 @Composable
 fun SplashView(navController: NavController) {
-    // Fondo de pantalla completo con el logo de la aplicación en el centro
+    val context = LocalContext.current
+    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.soundlottie)) // Reemplaza con tu archivo Lottie
+    val progress by animateLottieCompositionAsState(composition)
 
     Box(
         modifier = Modifier
@@ -30,26 +34,23 @@ fun SplashView(navController: NavController) {
             .background(Color.Black),
         contentAlignment = Alignment.Center
     ) {
-        // Reemplaza esto con tu logo o imagen de splash
-        Image(
-            painter = painterResource(id = R.drawable.icon),
-            contentDescription = "Logo",
-                    modifier = Modifier
-                    // Añade un corte redondo a la imagen
-                    .clip(CircleShape)
-                // Agrega un tamaño específico si lo deseas, por ejemplo 100.dp
-                .size(200.dp)
+        // Usando LottieAnimation en lugar de Image
+        LottieAnimation(
+            composition = composition,
+            progress = progress,
+            modifier = Modifier.size(300.dp) // Tamaño de la animación
         )
     }
 
     // Efecto de lado para manejar la navegación
     LaunchedEffect(Unit) {
         delay(3000) // Retraso de 3 segundos
-        navController.navigate("intro") { // Navega a la pantalla principal
-            popUpTo("splash") { inclusive = true } // Elimina la splash screen de la pila
+        navController.navigate("intro") {
+            popUpTo("splash") { inclusive = true }
         }
     }
 }
+
 
 @Preview(showBackground = true)
 @Composable

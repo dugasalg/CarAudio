@@ -4,6 +4,23 @@
             "outputFile": "com.example.caraudio.test.app-mergeDebugAndroidTestResources-33:/values-fi/values-fi.xml",
             "map": [
                 {
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/6e24335b519d5a4c9af58cca3a975b65/transformed/core-1.13.0-alpha02/res/values-fi/values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,351,456,561,673,789",
+                        "endColumns": "95,101,97,104,104,111,115,100",
+                        "endOffsets": "146,248,346,451,556,668,784,885"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,23",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,303,401,506,611,723,2019",
+                        "endColumns": "95,101,97,104,104,111,115,100",
+                        "endOffsets": "196,298,396,501,606,718,834,2115"
+                    }
+                },
+                {
                     "source": "/Users/diegosalgado/.gradle/caches/transforms-3/08187621e7f56f3b1906b0b93d961e9c/transformed/ui-release/res/values-fi/values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
@@ -18,23 +35,6 @@
                         "startOffsets": "839,933,1018,1117,1218,1307,1384,1477,1568,1650,1716,1784,1865,1947,2120,2197,2269",
                         "endColumns": "93,84,98,100,88,76,92,90,81,65,67,80,81,71,76,71,121",
                         "endOffsets": "928,1013,1112,1213,1302,1379,1472,1563,1645,1711,1779,1860,1942,2014,2192,2264,2386"
-                    }
-                },
-                {
-                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/res/values-fi/values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,351,456,561,673,789",
-                        "endColumns": "95,101,97,104,104,111,115,100",
-                        "endOffsets": "146,248,346,451,556,668,784,885"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,23",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,201,303,401,506,611,723,2019",
-                        "endColumns": "95,101,97,104,104,111,115,100",
-                        "endOffsets": "196,298,396,501,606,718,834,2115"
                     }
                 }
             ]

@@ -4,6 +4,23 @@
             "outputFile": "com.example.caraudio.test.app-mergeDebugAndroidTestResources-33:/values-uk/values-uk.xml",
             "map": [
                 {
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/6e24335b519d5a4c9af58cca3a975b65/transformed/core-1.13.0-alpha02/res/values-uk/values-uk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,257,358,459,564,669,782",
+                        "endColumns": "99,101,100,100,104,104,112,100",
+                        "endOffsets": "150,252,353,454,559,664,777,878"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,23",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,205,307,408,509,614,719,2023",
+                        "endColumns": "99,101,100,100,104,104,112,100",
+                        "endOffsets": "200,302,403,504,609,714,827,2119"
+                    }
+                },
+                {
                     "source": "/Users/diegosalgado/.gradle/caches/transforms-3/08187621e7f56f3b1906b0b93d961e9c/transformed/ui-release/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
@@ -18,23 +35,6 @@
                         "startOffsets": "832,925,1009,1111,1212,1296,1378,1467,1555,1637,1707,1778,1863,1951,2124,2204,2274",
                         "endColumns": "92,83,101,100,83,81,88,87,81,69,70,84,87,71,79,69,122",
                         "endOffsets": "920,1004,1106,1207,1291,1373,1462,1550,1632,1702,1773,1858,1946,2018,2199,2269,2392"
-                    }
-                },
-                {
-                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/res/values-uk/values-uk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,257,358,459,564,669,782",
-                        "endColumns": "99,101,100,100,104,104,112,100",
-                        "endOffsets": "150,252,353,454,559,664,777,878"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,23",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,205,307,408,509,614,719,2023",
-                        "endColumns": "99,101,100,100,104,104,112,100",
-                        "endOffsets": "200,302,403,504,609,714,827,2119"
                     }
                 }
             ]

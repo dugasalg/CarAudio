@@ -1,5 +1,6 @@
 package com.example.caraudio.login.viewModel
 
+import android.content.Context
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -18,6 +19,11 @@ class LoginViewModel() : ViewModel() {
     val loginResponse: LiveData<LoginModel> = _loginResponse
     private val _loginAttempted = MutableLiveData<Boolean>()
     val loginAttempted: LiveData<Boolean> = _loginAttempted
+     fun clearSession(context: Context) {
+            val sharedPreferences = context.getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE)
+            sharedPreferences.edit().remove("jwtToken").apply()
+        }
+
 
     fun doLogin(loginData: LoginDataBody) {
         _loginAttempted.value = true
@@ -38,4 +44,5 @@ class LoginViewModel() : ViewModel() {
             }
         }
     }
+
 }

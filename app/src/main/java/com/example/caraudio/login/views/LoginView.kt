@@ -104,7 +104,7 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
             OutlinedTextField(
                 value = userName,
                 onValueChange = {userName = it },
-                label = { Text(text = stringResource(id = R.string.Enter_your_email)) },
+                label = { Text(text = stringResource(id = R.string.Enter_your_username)) },
                 keyboardOptions = KeyboardOptions.Default.copy(
                     keyboardType = androidx.compose.ui.text.input.KeyboardType.Email
                 ),
@@ -139,13 +139,6 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
             )
 
             Spacer(modifier = Modifier.height(16.dp))
-
-            // "Forget your password" button
-            TextButton(
-                onClick = { /* Handle "Forget your password" */ }
-            ) {
-                Text(text = stringResource(id = R.string.Forget_your_password))
-            }
 
             Spacer(modifier = Modifier.height(16.dp))
 

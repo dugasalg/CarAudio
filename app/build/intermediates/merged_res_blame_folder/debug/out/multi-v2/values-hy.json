@@ -4,24 +4,7 @@
             "outputFile": "com.example.caraudio.app-mergeDebugResources-67:/values-hy/values-hy.xml",
             "map": [
                 {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/res/values-hy/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,295,456,586,690,840,972,1095,1204,1367,1471,1635,1767,1925,2087,2148,2211",
-                        "endColumns": "101,160,129,103,149,131,122,108,162,103,163,131,157,161,60,62,77",
-                        "endOffsets": "294,455,585,689,839,971,1094,1203,1366,1470,1634,1766,1924,2086,2147,2210,2288"
-                    },
-                    "to": {
-                        "startLines": "43,44,45,46,47,48,49,50,52,53,54,55,56,57,58,59,60",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4238,4344,4509,4643,4751,4905,5041,5168,5432,5599,5707,5875,6011,6173,6339,6404,6471",
-                        "endColumns": "105,164,133,107,153,135,126,112,166,107,167,135,161,165,64,66,81",
-                        "endOffsets": "4339,4504,4638,4746,4900,5036,5163,5276,5594,5702,5870,6006,6168,6334,6399,6466,6548"
-                    }
-                },
-                {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/15ea7f1d5843f2aa851ebbf92a805572/transformed/play-services-basement-18.1.0/res/values-hy/values.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/15ea7f1d5843f2aa851ebbf92a805572/transformed/play-services-basement-18.1.0/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/08187621e7f56f3b1906b0b93d961e9c/transformed/ui-release/res/values-hy/values-hy.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,204,286,380,480,563,645,731,826,908,980,1051,1136,1224,1298,1379,1448",
-                        "endColumns": "98,81,93,99,82,81,85,94,81,71,70,84,87,73,80,68,117",
-                        "endOffsets": "199,281,375,475,558,640,726,821,903,975,1046,1131,1219,1293,1374,1443,1561"
-                    },
-                    "to": {
-                        "startLines": "40,41,93,95,97,109,110,111,112,113,114,115,116,119,123,124,125",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3980,4079,10282,10464,10651,12081,12163,12249,12344,12426,12498,12569,12654,12909,13275,13356,13425",
-                        "endColumns": "98,81,93,99,82,81,85,94,81,71,70,84,87,73,80,68,117",
-                        "endOffsets": "4074,4156,10371,10559,10729,12158,12244,12339,12421,12493,12564,12649,12737,12978,13351,13420,13538"
-                    }
-                },
-                {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/4ca4d94093595a68b345ce2f5cd1e523/transformed/material3-1.1.2/res/values-hy/values-hy.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/4ca4d94093595a68b345ce2f5cd1e523/transformed/material3-1.1.2/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/e05b1ce225b2f306a2f1bcaa6cc4bb82/transformed/appcompat-1.6.1/res/values-hy/values-hy.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/08187621e7f56f3b1906b0b93d961e9c/transformed/ui-release/res/values-hy/values-hy.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,204,286,380,480,563,645,731,826,908,980,1051,1136,1224,1298,1379,1448",
+                        "endColumns": "98,81,93,99,82,81,85,94,81,71,70,84,87,73,80,68,117",
+                        "endOffsets": "199,281,375,475,558,640,726,821,903,975,1046,1131,1219,1293,1374,1443,1561"
+                    },
+                    "to": {
+                        "startLines": "40,41,93,95,97,109,110,111,112,113,114,115,116,119,123,124,125",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3980,4079,10282,10464,10651,12081,12163,12249,12344,12426,12498,12569,12654,12909,13275,13356,13425",
+                        "endColumns": "98,81,93,99,82,81,85,94,81,71,70,84,87,73,80,68,117",
+                        "endOffsets": "4074,4156,10371,10559,10729,12158,12244,12339,12421,12493,12564,12649,12737,12978,13351,13420,13538"
+                    }
+                },
+                {
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/e05b1ce225b2f306a2f1bcaa6cc4bb82/transformed/appcompat-1.6.1/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/60eaf4fc9771597fec7337992d90d6fe/transformed/core-1.13.0-alpha01/res/values-hy/values-hy.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/6e24335b519d5a4c9af58cca3a975b65/transformed/core-1.13.0-alpha02/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -106,7 +89,24 @@
                     }
                 },
                 {
-                    "source": "/Users/jorgeromo/.gradle/caches/transforms-3/f9f2f358f01ee1065f25aa57b4087b8e/transformed/biometric-1.1.0/res/values-hy/values-hy.xml",
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/d0b8fa32f3806547f0b5b847d976276b/transformed/play-services-base-18.1.0/res/values-hy/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,295,456,586,690,840,972,1095,1204,1367,1471,1635,1767,1925,2087,2148,2211",
+                        "endColumns": "101,160,129,103,149,131,122,108,162,103,163,131,157,161,60,62,77",
+                        "endOffsets": "294,455,585,689,839,971,1094,1203,1366,1470,1634,1766,1924,2086,2147,2210,2288"
+                    },
+                    "to": {
+                        "startLines": "43,44,45,46,47,48,49,50,52,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4238,4344,4509,4643,4751,4905,5041,5168,5432,5599,5707,5875,6011,6173,6339,6404,6471",
+                        "endColumns": "105,164,133,107,153,135,126,112,166,107,167,135,161,165,64,66,81",
+                        "endOffsets": "4339,4504,4638,4746,4900,5036,5163,5276,5594,5702,5870,6006,6168,6334,6399,6466,6548"
+                    }
+                },
+                {
+                    "source": "/Users/diegosalgado/.gradle/caches/transforms-3/f9f2f358f01ee1065f25aa57b4087b8e/transformed/biometric-1.1.0/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",

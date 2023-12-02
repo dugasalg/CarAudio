@@ -158,9 +158,8 @@ fun NavigationHost(navController: NavHostController) {
             OnboardingView(navController = navController)
         }
         composable(NavRoutes.Menu.route) {
-            MenuView(navController = navController) { menuItem ->
-                when (menuItem) {
-                    "Cierra Sesión" -> {
+            MenuView(navController = navController, viewModel = LoginViewModel()) { menuItems ->
+                    "Sign out" -> {
                         navController.navigate(route = NavRoutes.Intro.route)
                     }
                     else -> {
@@ -172,7 +171,6 @@ fun NavigationHost(navController: NavHostController) {
     }
 
         // Puedes agregar más composables aquí para otras pantallas
-    }
 
 
 

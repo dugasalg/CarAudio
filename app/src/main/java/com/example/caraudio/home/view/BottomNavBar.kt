@@ -25,7 +25,10 @@ fun BottomNavBar(navController: NavController, modifier: Modifier) {
             icon = { Icon(Icons.Default.Home, contentDescription = null) },
             label = { androidx.compose.material3.Text(text = stringResource(id = R.string.home)) },
             selected = true,
-            onClick = {}
+            onClick = {
+                navController.navigate(NavRoutes.Home.route)
+
+            }
         )
         BottomNavigationItem(
             icon = { Icon(Icons.Default.ShoppingCart, contentDescription = null) },

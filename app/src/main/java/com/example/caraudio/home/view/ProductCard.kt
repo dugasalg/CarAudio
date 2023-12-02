@@ -18,7 +18,7 @@ import coil.compose.rememberImagePainter
 import com.example.caraudio.models.Speakers
 
 @Composable
-fun ProductCard(product: String, price: Int, image: String) {
+fun ProductCard(product: String, price: Double, image: String) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(27.dp))

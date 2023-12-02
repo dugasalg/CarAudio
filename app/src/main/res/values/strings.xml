@@ -6,12 +6,12 @@
     <string name="Continue_as_a_guest">Continue as a guest</string>
     <string name="Welcome_back">Welcome back!</string>
     <string name="Glad_to_see_you_again">Glad to see you again</string>
-    <string name="Enter_your_email">Enter your email</string>
+    <string name="Enter_your_username">Enter your username</string>
     <string name="Enter_your_password">Enter your password</string>
     <string name="Forget_your_password">Forget your password?</string>
     <string name="LOGIN">LOGIN</string>
-    <string name="Dont_have_an_account_Register_now">Dont have an account Register now</string>
-    <string name="Hello_Register_to_get_started">Hello Register to get started</string>
+    <string name="Dont_have_an_account_Register_now">Dont have an account? Register now</string>
+    <string name="Hello_Register_to_get_started">Hello! Register to get started</string>
     <string name="Username">Username</string>
     <string name="Email">Email</string>
     <string name="Password">Password</string>
@@ -25,11 +25,11 @@
     <string name="skip">skip</string>
     <string name="next">next</string>
     <string name="search">Search</string>
-    <string name="home">home</string>
-    <string name="cart">cart</string>
-    <string name="menu">menu</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="menu">Menu</string>
     <string name="birthDate">Birth Date</string>
-    <string name="address">address</string>
+    <string name="address">Address</string>
 
 
 

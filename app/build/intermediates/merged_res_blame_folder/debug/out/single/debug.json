@@ -72,6 +72,10 @@
         "source": "com.example.caraudio.app-main-71:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
+        "merged": "com.example.caraudio.app-merged_res-69:/raw_soundlottie.json.flat",
+        "source": "com.example.caraudio.app-main-71:/raw/soundlottie.json"
+    },
+    {
         "merged": "com.example.caraudio.app-merged_res-69:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "com.example.caraudio.app-main-71:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
