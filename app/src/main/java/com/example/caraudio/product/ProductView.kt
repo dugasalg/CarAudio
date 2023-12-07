@@ -55,10 +55,10 @@ fun ProductDetailsScreen(navController: NavController, productId: String, produc
                         contentColor = Color.White
                     )
                 ) {
-                    Text("Add to cart", fontSize = 20.sp)
+                    Text("Add to cart  ", fontSize = 20.sp)
                     Icon(
                         modifier = Modifier
-                            .size(25.dp)
+                            .size(24.dp)
                             .align(Alignment.CenterVertically),
                         painter = painterResource(id = R.drawable.vector),
                         contentDescription = "Cart Icon"
