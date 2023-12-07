@@ -7,7 +7,6 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
@@ -25,7 +24,7 @@ fun MenuView(
     navController: NavController,
     onMenuItemClick: (String) -> Unit,
     viewModel: LoginViewModel // Asegúrate de que LoginViewModel está correctamente importado
-) {
+){
     val context = LocalContext.current
 
     Scaffold(
@@ -52,9 +51,6 @@ fun MenuView(
                 "My orders",
                 "Buy again",
                 "Language",
-                "Rate the app",
-                "Permission",
-                "Notifications",
                 "About app",
                 "Sign out"
             )

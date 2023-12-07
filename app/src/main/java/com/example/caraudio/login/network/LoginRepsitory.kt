@@ -1,4 +1,4 @@
-package com.example.caraudio.intropage.network
+package com.example.caraudio.login.network
 
 import com.example.caraudio.RetrofitInstance
 import com.example.caraudio.intropage.Model.LoginDataBody

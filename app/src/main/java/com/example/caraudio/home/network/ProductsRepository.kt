@@ -9,4 +9,7 @@ class ProductsRepository {
     suspend fun getProducts(): List<Products> {
         return productService.getProducts()
     }
+    suspend fun getProductDetails(productId: String): Products {
+        return productService.getProductDetails(productId)
+    }
 }

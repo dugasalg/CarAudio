@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.caraudio.intropage.Model.LoginDataBody
 import com.example.caraudio.intropage.Model.LoginModel
-import com.example.caraudio.intropage.network.LoginRepository
+import com.example.caraudio.login.network.LoginRepository
 import kotlinx.coroutines.launch
 
 class LoginViewModel() : ViewModel() {

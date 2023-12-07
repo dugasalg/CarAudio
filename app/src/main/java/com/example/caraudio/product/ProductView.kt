@@ -1,92 +1,158 @@
 package com.example.caraudio.product
     import androidx.compose.foundation.Image
+    import androidx.compose.foundation.background
     import androidx.compose.foundation.layout.*
+    import androidx.compose.foundation.shape.RoundedCornerShape
     import androidx.compose.material.*
     import androidx.compose.runtime.Composable
+    import androidx.compose.runtime.LaunchedEffect
+    import androidx.compose.runtime.getValue
+    import androidx.compose.runtime.livedata.observeAsState
     import androidx.compose.ui.Alignment
     import androidx.compose.ui.Modifier
+    import androidx.compose.ui.draw.clip
+    import androidx.compose.ui.graphics.Color
+    import androidx.compose.ui.layout.ContentScale
     import androidx.compose.ui.res.painterResource
     import androidx.compose.ui.text.font.FontWeight
     import androidx.compose.ui.tooling.preview.Preview
     import androidx.compose.ui.unit.dp
     import androidx.compose.ui.unit.sp
+    import androidx.lifecycle.viewmodel.compose.viewModel
     import androidx.navigation.NavController
     import androidx.navigation.compose.rememberNavController
+    import coil.compose.rememberImagePainter
     import com.example.caraudio.R
+    import com.example.caraudio.home.viewModel.ProductsViewModel
 
 @Composable
-    fun ProductDetailsScreen(navController: NavController) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            // Imagen del producto (reemplaza R.drawable.product_image con tu imagen de recurso)
-            Image(
-                painter = painterResource(id = R.drawable.jlamp),
-                contentDescription = "Product Image",
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(240.dp)
-            )
+fun ProductDetailsScreen(navController: NavController, productId: String, product: String, price: Double, image: String, rating: Double, brand: String) {
+    // Obtiene una instancia del ViewModel
+    val viewModel: ProductsViewModel = viewModel()
+    // Observa los cambios en los detalles del producto
+    val productDetails by viewModel.productDetails.observeAsState()
 
-            Spacer(modifier = Modifier.height(16.dp))
+    LaunchedEffect(productId) {
+        viewModel.fetchProductDetails(productId)
+    }
 
-            // Nombre del producto
-            Text(
-                text = "VX400/4i",
-                fontSize = 24.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-            // Marca del producto
-            Text(
-                text = "by JLAudio",
-                fontSize = 16.sp
-            )
-
-            // Calificación del producto
-            Text(
-                text = "4.8 (1390 reviews)",
-                fontSize = 16.sp
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            // Título de la descripción del producto
-            Text(
-                text = "Product Description",
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold
-            )
-
-            // Descripción del producto
-            Text(
-                text = "4-Channel Class D Full-Range Amplifier with Integrated DSP, 100 W x 4 @ 2 Ω / 75 W x 4 @ 4 Ω - 14.4V",
-                fontSize = 16.sp
-            )
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            // Botón para agregar al carrito
-            Button(
-                onClick = {
-                    // Acción de agregar al carrito
-                },
-                modifier = Modifier.fillMaxWidth()
+    Scaffold(
+        bottomBar = {
+            BottomAppBar(
+                contentPadding = PaddingValues(16.dp),
+                backgroundColor = Color.Black
             ) {
-                Text("Add to cart  ")
-                // Icono del carrito (reemplaza R.drawable.ic_shopping_cart con tu icono de recurso)
-                Icon(
+                Button(
+                    onClick = {
+                        // Acción de agregar al carrito
+                    },
                     modifier = Modifier
-                        .size(18.dp)
-                        .align(Alignment.CenterVertically),
-                    painter = painterResource(id = R.drawable.vector),
-                    contentDescription = "Cart Icon"
+                        .fillMaxWidth()
+                        .height(56.dp)
+                        .padding(horizontal = 16.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = Color.Black,
+                        contentColor = Color.White
+                    )
+                ) {
+                    Text("Add to cart", fontSize = 20.sp)
+                    Icon(
+                        modifier = Modifier
+                            .size(25.dp)
+                            .align(Alignment.CenterVertically),
+                        painter = painterResource(id = R.drawable.vector),
+                        contentDescription = "Cart Icon"
+                    )
+                }
+            }
+        }
+    ) { innerPadding ->
+        Column(
+            modifier = Modifier
+                .padding(innerPadding)
+                .fillMaxSize()
+        ) {
+            productDetails?.let { product ->
+                Spacer(modifier = Modifier.height(30.dp))
+
+                // Cargando la imagen del producto usando rememberImagePainter
+                val image = rememberImagePainter(image)
+                Image(
+                    painter = image,
+                    contentDescription = "Product Image",
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .height(240.dp)
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(8.dp))
                 )
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Box(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .background(
+                            color = Color(android.graphics.Color.parseColor("#F2F2F4")),
+                            shape = RoundedCornerShape(16.dp)
+                        )
+                        .padding(16.dp)
+                        .fillMaxWidth()
+                        .weight(1f)
+                ) {
+                    Column(
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        // Nombre del producto
+                        Text(
+                            text = product.product,
+                            fontSize = 26.sp,
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(4.dp)
+                        )
+
+                        // Marca del producto
+                        Text(
+                            text = "by ${product.brand}",
+                            fontSize = 19.sp,
+                            modifier = Modifier.padding(4.dp)
+                        )
+
+                        // Calificación del producto
+                        Text(
+                            text = "${product.rating} reviews)",
+                            fontSize = 19.sp,
+                            modifier = Modifier.padding(4.dp)
+                        )
+
+                        Spacer(modifier = Modifier.height(16.dp))
+
+                        // Descripción del producto
+                        Text(
+                            text = product.description,
+                            fontSize = 19.sp,
+                            modifier = Modifier.padding(4.dp)
+                        )
+                    }
+                }
             }
         }
     }
+}
 
-    @Preview(showBackground = true)
-    @Composable
-    fun ProductDetailsScreenPreview() {
-        ProductDetailsScreen(navController = rememberNavController())
-    }
+@Preview
+@Composable
+fun ProductDetailsScreenPreview() {
+    ProductDetailsScreen(
+        navController = rememberNavController(),
+        productId = "6563d9929a6e4719531b8cd2",
+        product = "Product Name",
+        price = 100.0,
+        image = "https://picsum.photos/200/300",
+        rating = 4.5,
+        brand = "Brand Name"
+    )
+}
+
+
+
 

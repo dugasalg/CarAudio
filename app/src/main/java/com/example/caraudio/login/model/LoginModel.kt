@@ -9,5 +9,5 @@ data class LoginModel(
 //Se envia en el body de la peticion
 data class LoginDataBody(
     val usrn: String,
-    val password: String
+    val password: String,
 )

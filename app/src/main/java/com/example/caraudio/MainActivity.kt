@@ -25,8 +25,6 @@ import com.example.caraudio.onboarding.OnboardingView
 import com.example.caraudio.ui.theme.CarAudioTheme
 import com.google.accompanist.pager.ExperimentalPagerApi
 import androidx.core.content.ContextCompat
-import androidx.navigation.NavController
-import com.example.caraudio.home.view.BottomNavBar
 import com.example.caraudio.home.view.HomePage
 import com.example.caraudio.home.viewModel.ProductsViewModel
 import com.example.caraudio.login.viewModel.LoginViewModel
@@ -162,21 +160,25 @@ fun NavigationHost(navController: NavHostController) {
             AboutScreen(navController = navController)
         }
         composable(NavRoutes.Menu.route) {
-           // MenuView(navController = navController, viewModel = LoginViewModel()) { menuItems ->
-             //       "Sign out" -> {
-                        navController.navigate(route = NavRoutes.Intro.route)
+            MenuView(navController = navController, onMenuItemClick = { menuItem ->
+                when (menuItem) {
+                    "Sign out" -> {
+                        // Lógica para "Sign out"
                     }
-               //     else -> {
-                        // Manejar otras opciones del menú si es necesario
+                    "About app" -> {
+                        // Navegar a la pantalla "About"
+                        navController.navigate(NavRoutes.About.route)
+                    }
+                    else -> {
+                        // Manejar otros elementos del menú
                     }
                 }
-            //}
-       // }
-    //}
+            }, viewModel = LoginViewModel())
+        }
 
-        // Puedes agregar más composables aquí para otras pantallas
-
-
+        // ... más composables si son necesarios
+    }
+}
 
 @Preview(showBackground = true)
 @Composable
