@@ -1,5 +1,6 @@
 package com.example.caraudio.home.view
 
+import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -16,13 +17,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.caraudio.R
+import com.example.caraudio.home.model.Products
 import com.example.caraudio.home.viewModel.ProductsViewModel
+import com.example.caraudio.product.ProductDetailsScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
     viewModel.fetchProducts()
     val products by viewModel.products.observeAsState(emptyList())
+    val selectedProduct = remember { mutableStateOf(null as Products?) }
+
     Scaffold(
         content = { it
             Column(
@@ -42,11 +47,23 @@ fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
                 LazyRow {
                     items(products) { product ->
                         Spacer(modifier = Modifier.width(8.dp))
-                        ProductCard(product.product, product.price, product.image)
+                        ProductCard(
+                            product.product,
+                            product.price,
+                            product.image, onProductClick = {
+                                Log.d("seleccionaste", product.product)
+                                selectedProduct.value = product
+                            })
                     }
                 }
             }
+            selectedProduct.value?.let { product ->
+                ProductDetailsScreen(product._id, product.product, product.price, product.image, product.rating, onDismiss = {
+                    selectedProduct.value = null
+                } )
+            }
         },
+
         bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
     )
 }

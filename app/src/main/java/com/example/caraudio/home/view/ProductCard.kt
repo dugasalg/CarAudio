@@ -2,6 +2,7 @@ package com.example.caraudio.home.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -18,7 +19,7 @@ import coil.compose.rememberImagePainter
 import com.example.caraudio.models.Speakers
 
 @Composable
-fun ProductCard(product: String, price: Double, image: String) {
+fun ProductCard(product: String, price: Double, image: String, onProductClick: () -> Unit) {
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(27.dp))
@@ -30,6 +31,8 @@ fun ProductCard(product: String, price: Double, image: String) {
             .padding(10.dp)
             .height(200.dp)
             .width(240.dp)
+            .clickable { onProductClick() }
+
     )
     {
         Column(

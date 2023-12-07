@@ -8,5 +8,6 @@ data class Products(
     val image: String,
     var quantity: Int,
     val brand: String,
-    val rating: Double
+    val rating: Double,
+    val _id: String
 )
