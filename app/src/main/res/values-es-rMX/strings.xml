@@ -7,10 +7,10 @@
     <string name="Continue_as_a_guest">Continuar como invitado</string>
     <string name="Welcome_back">Bienvenido de nuevo</string>
     <string name="Glad_to_see_you_again">!Nos da gusto verte otra vez!</string>
-    <string name="Enter_your_email">ingresa tu correo</string>
+    <string name="Enter_your_username">ingresa tu usuario</string>
     <string name="Enter_your_password">ingresa tu contraseña</string>
     <string name="Forget_your_password">Olvidaste tu constraseña?</string>
-    <string name="LOGIN">INICIAR SECION</string>
+    <string name="LOGIN">Iniciar Sesión</string>
     <string name="Dont_have_an_account_Register_now">No tienes cuenta? Registrate ahora</string>
     <string name="Hello_Register_to_get_started">Hola! Registrate para empezar</string>
     <string name="Username">Nombre de usuario</string>
@@ -23,10 +23,13 @@
     <string name="Get_Started">Empecemos</string>
     <string name="Amplifiers">Amplificadores</string>
     <string name="Speakers_and_Subwoofers"> Altavoces y Bajos</string>
-    <string name="skip">saltar</string>
-    <string name="next">siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="next">Siguiente</string>
     <string name="search">Buscar</string>
     <string name="home">Inicio</string>
     <string name="cart">Carrito</string>
     <string name="menu">Menu</string>
+    <string name="birthDate">Fecha de Nacimiento</string>
+    <string name="address">Direccion</string>
+
 </resources>
