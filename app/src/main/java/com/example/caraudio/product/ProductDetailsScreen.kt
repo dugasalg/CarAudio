@@ -102,10 +102,6 @@ fun ProductDetailsScreen(
 
         }
     }
- }
-
-
-
-
+}
 
 

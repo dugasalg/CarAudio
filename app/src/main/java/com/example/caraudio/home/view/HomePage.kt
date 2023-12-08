@@ -1,6 +1,8 @@
 package com.example.caraudio.home.view
 
+import android.annotation.SuppressLint
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -23,14 +25,14 @@ import com.example.caraudio.home.model.Products
 import com.example.caraudio.home.viewModel.ProductsViewModel
 import com.example.caraudio.product.ProductDetailsScreen
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
+fun HomePage(navController: NavController, viewModel: ProductsViewModel, carritoViewModel: CarritoViewModel) {
     viewModel.fetchProducts()
     val products by viewModel.products.observeAsState(emptyList())
     val selectedProduct = remember { mutableStateOf(null as Products?) }
+    val context = LocalContext.current
 
-    val carritoViewModel: CarritoViewModel = viewModel()
+    // val carritoViewModel: CarritoViewModel = viewModel()
 
 
     Scaffold(
@@ -74,12 +76,14 @@ fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
                     },
                     onAddToCart = { carritoId, productoId ->
                         carritoViewModel.agregarProductoAlCarrito(carritoId, productoId)
+                        selectedProduct.value = null
+                        Toast.makeText(context, "Producto agregado al carrito", Toast.LENGTH_LONG).show()
                     }
-                        )
+                )
             }
         },
 
-            bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
+        bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
     )
 }
 
@@ -109,10 +113,5 @@ fun SearchBar() {
 @Preview
 @Composable
 fun PreviewHomePage() {
-    HomePage(navController = NavController(LocalContext.current), viewModel = ProductsViewModel())
+    HomePage(navController = NavController(LocalContext.current), viewModel = ProductsViewModel(), carritoViewModel = CarritoViewModel())
 }
-
-
-
-
-
