@@ -36,8 +36,7 @@ fun LoginScreen(NavController: NavController, viewModel: LoginViewModel) {
     var showErrorDialog by remember { mutableStateOf(false) }
     val loginAttempted by viewModel.loginAttempted.observeAsState()
 
-    LaunchedEffect(isLoginSuccessful, loginAttempted) {
-        if (loginAttempted == true) {
+    LaunchedEffect(isLoginSuccessful) {        if (loginAttempted == true) {
             if (isLoginSuccessful == true) {
                 NavController.navigate("home"){
                     popUpTo(NavRoutes.Home.route){

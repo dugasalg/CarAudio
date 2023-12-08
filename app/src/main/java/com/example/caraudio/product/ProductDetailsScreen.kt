@@ -1,13 +1,11 @@
 package com.example.caraudio.product
 
-import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
@@ -16,15 +14,12 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import coil.compose.rememberImagePainter
 import com.example.caraudio.R
 import com.example.caraudio.home.viewModel.ProductsViewModel
@@ -36,13 +31,11 @@ fun ProductDetailsScreen(
     price: Double,
     image: String,
     rating: Double,
+    onAddToCart: (String, String) -> Unit,
     onDismiss: () -> Unit
 ) {
     // Obtiene una instancia del ViewModel
     val viewModel: ProductsViewModel = viewModel()
-    // Observa los cambios en los detalles del producto
-    val productDetails by viewModel.productDetails.observeAsState()
-
 
     /*
     LaunchedEffect(productId) {
@@ -84,7 +77,7 @@ fun ProductDetailsScreen(
                 ) {
                     Button(
                         onClick = {
-                            // Acción de agregar al carrito // post para agregar al carrito
+                            onAddToCart("65713d495541a018b0e923c7", productId) // Asumiendo que "65713d495541a018b0e923c7" es el ID del carrito
                         },
                         modifier = Modifier
                             .fillMaxWidth()
@@ -112,18 +105,6 @@ fun ProductDetailsScreen(
  }
 
 
-@Preview
-@Composable
-fun ProductDetailsScreenPreview() {
-    ProductDetailsScreen(
-        productId = "6563d9929a6e4719531b8cd2",
-        product = "Product Name",
-        price = 100.0,
-        image = "https://picsum.photos/200/300",
-        rating = 4.5,
-        onDismiss = {}
-    )
-}
 
 
 

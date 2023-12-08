@@ -1,4 +1,6 @@
 package com.example.caraudio.cart.model
 
-class CarritoRequestBody {
-}
+data class CarritoRequestBody(
+    val carritoId: String,
+    val productoId: String
+)

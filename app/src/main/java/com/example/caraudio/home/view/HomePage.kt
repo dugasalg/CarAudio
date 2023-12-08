@@ -15,8 +15,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.caraudio.R
+import com.example.caraudio.cart.viewModel.CarritoViewModel
 import com.example.caraudio.home.model.Products
 import com.example.caraudio.home.viewModel.ProductsViewModel
 import com.example.caraudio.product.ProductDetailsScreen
@@ -27,6 +29,9 @@ fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
     viewModel.fetchProducts()
     val products by viewModel.products.observeAsState(emptyList())
     val selectedProduct = remember { mutableStateOf(null as Products?) }
+
+    val carritoViewModel: CarritoViewModel = viewModel()
+
 
     Scaffold(
         content = { it
@@ -58,13 +63,23 @@ fun HomePage(navController: NavController, viewModel: ProductsViewModel) {
                 }
             }
             selectedProduct.value?.let { product ->
-                ProductDetailsScreen(product._id, product.product, product.price, product.image, product.rating, onDismiss = {
-                    selectedProduct.value = null
-                } )
+                ProductDetailsScreen(
+                    productId = product._id,
+                    product = product.product,
+                    price = product.price,
+                    image = product.image,
+                    rating = product.rating,
+                    onDismiss = {
+                        selectedProduct.value = null
+                    },
+                    onAddToCart = { carritoId, productoId ->
+                        carritoViewModel.agregarProductoAlCarrito(carritoId, productoId)
+                    }
+                        )
             }
         },
 
-        bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
+            bottomBar = {BottomNavBar(navController = navController, modifier = Modifier)}
     )
 }
 

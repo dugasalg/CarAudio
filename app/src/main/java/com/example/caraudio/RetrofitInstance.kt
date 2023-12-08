@@ -1,6 +1,6 @@
 package com.example.caraudio
 
-import com.example.caraudio.cart.network.QuotationService
+import com.example.caraudio.cart.network.CarritoService
 import com.example.caraudio.home.network.ProductService
 import com.example.caraudio.login.network.LoginService
 import com.example.caraudio.register.network.RegisterService
@@ -39,7 +39,10 @@ object RetrofitInstance {
     val productsService: ProductService by lazy {
         retrofit.create(ProductService::class.java)
     }
-    val quotationService: QuotationService by lazy {
-        retrofit.create(QuotationService::class.java)
+
+    val carritoService: CarritoService by lazy {
+        retrofit.create(CarritoService::class.java)
     }
+
+
 }
